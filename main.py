@@ -8,9 +8,13 @@ def gen_list():
     return listy
 
 
-def bubble(sorter):
+def bubble(sorter): # sorter is the list we are sorting
     unsorted = False
     while unsorted:
-        
+        for x in len(sorter):
+            first = sorter[x]
+            next = sorter[(x+1)]
+            if (first < next):
+                
 
 bubble(gen_list())
