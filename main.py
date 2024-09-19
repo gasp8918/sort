@@ -9,12 +9,15 @@ def gen_list():
 
 
 def bubble(sorter): # sorter is the list we are sorting
-    unsorted = False
+    unsorted = True
     while unsorted:
-        for x in len(sorter):
+        yummers = False
+        for x in range(len(sorter)):
+            print(sorter)
             first = sorter[x]
             next = sorter[(x+1)]
-            if (first < next):
-                
-
+            if (first > next):
+                sorter[x+1] = first
+                sorter[x] = next
+        if yummers: unsorted = False
 bubble(gen_list())
